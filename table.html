@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+      
+    </style>
+
+
+<script type="text/javascript">  
+    $(document).ready(function() {  
+        $('tr:even').css('background-Color', 'gray');  
+        $('tr:odd').css('background-Color', 'yellow');  
+    });  
+</script>  
+</head>
+
+<body>
+    <table id="table" style="border: 1px solid black;">
+        <tr>
+            <th>company</th>
+            <th>contact</th>
+            <th>country</th>
+        </tr>
+        <tr>
+            <td>C#</td>
+            <td>ASP.NET</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>.NET</td>
+            <td>jQuery</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>AJX</td>
+            <td>CSS</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>JAX</td>
+            <td>CS</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>AJA</td>
+            <td>SS</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+    <button id="btn">color even rows</button>
+    <button id="button2">color odd rows</button>
+    <script>
+
+        $(document).ready(function () {
+            $('#table tr:even').css('background-color', 'lightgray');
+            $('#table tr:odd').css('background-color', 'dodgerblue');
+        });
+
+
+
+        </script>
+</body>
+
+</html>
