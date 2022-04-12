@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" autofocus><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" autofocus><br>
+        <button type="submit" id="Btn">Submit</button>
+        </form>
+    </div>
+    <script>
+$('#Btn').click(function(){
+   if($('#fname').val() == '') 
+    {       
+          $('#fname').css('background-color','red');
+        alert("required field!");
+        }
+    else if($('#fname').val() != '')
+           {$('#fname').css('background-color' , 'white');
+    }
+   else if ($('#lname').val() == '')
+     {
+         $('#lname').css('background color','red');
+          alert("required field!");
+     }
+ else {
+ $('#lname').css('background-color','grey');
+}
+});
+    </script>
+</body>
+</html>
